@@ -8,7 +8,7 @@ var app = express();
     app.set('port', '3000');
 
 // middlewares
-    app.use(logger('common'));
+    app.use(logger('dev'));
 
 // routes
 var statsController = require('./stats');
