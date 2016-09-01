@@ -17,5 +17,8 @@ start-demo-1:
 start-demo-2:
 	node demo_2
 
+start-demo-3:
+	node demo_3
+
 start-fake-traffic:
 	node fake_traffic
