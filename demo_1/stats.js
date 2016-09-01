@@ -6,7 +6,6 @@ var statsd  = new SDC({
         port: 8125,
         tcp: true,
         socketTimeoutsToClose: 10,
-        prefix: 'demo1',
     });
 
 module.exports.middleware = function (req, res, next)
@@ -14,6 +13,6 @@ module.exports.middleware = function (req, res, next)
     // we don't want the middleware to affect the response time
     next();
 
-    // simple total requests count
+    // total requests count
     statsd.increment('total');
 };
