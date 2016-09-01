@@ -4,8 +4,6 @@ var SDC     = require('statsd-client');
 var statsd  = new SDC({
         host: 'localhost',
         port: 8125,
-        tcp: true,
-        socketTimeoutsToClose: 10,
     });
 
 var useragent   = require('useragent');

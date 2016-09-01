@@ -4,8 +4,6 @@ var SDC     = require('statsd-client');
 var statsd  = new SDC({
         host: 'localhost',
         port: 8125,
-        tcp: true,
-        socketTimeoutsToClose: 10,
     });
 
 module.exports.middleware = function (req, res, next)

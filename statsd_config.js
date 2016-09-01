@@ -123,11 +123,11 @@ Optional Variables:
   backends: [ 'statsd-elasticsearch-backend' ],
   debug: true,
 
-  servers: [
-    {
-      server: "./servers/tcp",
-    },
-  ],
+  // servers: [
+  //   {
+  //     server: "./servers/tcp",
+  //   },
+  // ],
 
   // don't send counters with 0 values
   deleteCounters: true,
