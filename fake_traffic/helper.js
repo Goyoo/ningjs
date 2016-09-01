@@ -41,8 +41,6 @@ var cookies = [];
 
         cookies.push(temp);
     }
-
-    console.log(cookies);
 })(); // direct call
 
 module.exports.getRandomCookie = function ()
