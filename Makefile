@@ -14,5 +14,8 @@ import-statsd-es-template:
 start-demo-1:
 	node demo_1
 
+start-demo-2:
+	node demo_2
+
 start-fake-traffic:
 	node fake_traffic

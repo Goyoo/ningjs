@@ -28,6 +28,7 @@
     "request": "^2.74.0",
     "statsd": "^0.8.0",
     "statsd-client": "^0.2.2",
-    "statsd-elasticsearch-backend": "git://github.com/Goyoo/statsd-elasticsearch-backend.git"
+    "statsd-elasticsearch-backend": "git://github.com/Goyoo/statsd-elasticsearch-backend.git",
+    "useragent": "^2.1.9"
   }
 }
