@@ -3,7 +3,7 @@
 var request = require('request');
 var helper = require('./helper');
 
-setInterval(function ()
+function sendAFakeRequest()
 {
     request({
         baseUrl: 'http://localhost:3000/',
@@ -19,4 +19,9 @@ setInterval(function ()
         if (error)
             console.dir(error);
     });
-}, 100); // ~10 times per second
+
+    // we want to have some randomess
+    setTimeout(sendAFakeRequest, 50 + Math.floor(Math.random() * 50));
+}
+
+sendAFakeRequest();
