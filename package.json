@@ -26,6 +26,7 @@
     "express": "^4.14.0",
     "morgan": "^1.7.0",
     "request": "^2.74.0",
-    "statsd": "^0.8.0"
+    "statsd": "^0.8.0",
+    "statsd-elasticsearch-backend": "git://github.com/Goyoo/statsd-elasticsearch-backend.git"
   }
 }
