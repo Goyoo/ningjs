@@ -1,6 +1,19 @@
 'use strict';
 
-module.exports.index = function (req, res, next)
+var SDC     = require('statsd-client');
+var statsd  = new SDC({
+        host: 'localhost',
+        port: 8125,
+        tcp: true,
+        socketTimeoutsToClose: 10,
+        prefix: 'demo1',
+    });
+
+module.exports.middleware = function (req, res, next)
 {
-    res.end('hi');
+    // we don't want the middleware to affect the response time
+    next();
+
+    // simple total requests count
+    statsd.increment('total');
 };

@@ -10,9 +10,17 @@ var app = express();
 // middlewares
     app.use(logger('dev'));
 
+var statsHelper = require('./stats');
+    app.use(statsHelper.middleware);
+
 // routes
-var statsController = require('./stats');
-    app.get('/', statsController.index);
+    app.all(
+        [ '/','/login', '/register', '/blog', '/user' ],
+        function (req, res, next)
+        {
+            res.end('<html><body><h1>Hello world!</h1></body></html>');
+        }
+    );
 
 // starting the server
 var server;
