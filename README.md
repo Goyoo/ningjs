@@ -21,5 +21,5 @@ $> cd ningjs
 Table of contents
 ------------------------------
 
-* [Setup Elasticsearch and Kibana][docs_elasticsearch_kibana]
+* [Setup Elasticsearch and Kibana](https://github.com/Goyoo/ningjs/blob/master/docs/elasticsearch_kibana.md)
 * [Setup Statsd][docs_statsd]
