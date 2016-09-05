@@ -2,7 +2,7 @@
 
 var SDC     = require('statsd-client');
 var statsd  = new SDC({
-        host: 'localhost',
+        host: '127.0.0.1',
         port: 8125,
     });
 

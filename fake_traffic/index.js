@@ -6,7 +6,7 @@ var helper = require('./helper');
 function sendAFakeRequest()
 {
     request({
-        baseUrl: 'http://localhost:3000/',
+        baseUrl: 'http://127.0.0.1:3000/',
         uri: helper.getRandomURI(),
         method: helper.getRandomHTTPMethod(),
         headers: {
