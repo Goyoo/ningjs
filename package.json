@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/Goyoo/ningjs#readme",
   "dependencies": {
+    "elasticdump": "^2.4.2",
     "express": "^4.14.0",
     "morgan": "^1.7.0",
     "request": "^2.74.0",
