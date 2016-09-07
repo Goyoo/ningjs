@@ -134,10 +134,10 @@ Optional Variables:
   deleteIdleStats: true,
 
   elasticsearch: {
-    port:          9200,
+    port:          process.env.ES_PORT,
 
     // change this if depending where your elastic search is running
-    host:          "192.168.99.100",
+    host:          process.env.ES_HOST,
     // host:          "127.0.0.1",
     
     path:          "/",
